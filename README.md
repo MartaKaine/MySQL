@@ -227,30 +227,6 @@ This ensures databases are **efficient, organised, and scalable**.
 
 ---
 
-### Query Example
-Screenshot showing:
-- SQL query in **MySQL Workbench**
-- Result table output
-
-Example screenshot ideas:
-
-- Customer data query results
-- Product price filtering query
-- JOIN query combining products and suppliers
-
-#### Aggregation Query
-Example showing:
-
-- `GROUP BY` query
-- Result table summarising categories or products
-
-#### Database Exploration
-Screenshot showing:
-
-- Database schema or table structure
-- Multiple related tables in MySQL Workbench
-
----
 
 ## 🚀 Why This Project Matters
 
