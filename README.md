@@ -21,6 +21,65 @@ The exercises simulate real-world tasks a **Data Technician or Junior Data Analy
 
 ---
 
+## 📸 Query Examples
+👉 **Average City Population by Country**
+
+SELECT country.name, AVG(city.population) as 'Average City Population'
+
+FROM country
+
+join city
+
+on city.countrycode = country.code
+
+group by country.name;
+
+<img width="283" height="352" alt="image" src="https://github.com/user-attachments/assets/8574e2de-e73d-46fe-bee0-286f66bad74d" />
+
+
+👉 **Countries with Low Population Density**
+
+SELECT name, (population / surfacearea) as PopulationDensity
+
+FROM country
+
+order by PopulationDensity;
+
+<img width="392" height="326" alt="image" src="https://github.com/user-attachments/assets/d546d9b2-d8bf-45c8-97e8-658710339a4a" />
+
+
+👉 **Products with their prices and the quantity ordered for each product**
+
+SELECT p.ProductName, p.price, SUM(od.quantity) AS TotalQuantity
+
+FROM Products as p
+
+JOIN Order_details as od
+
+ON p.productid = od.productid
+
+GROUP BY p.productname, p.price;
+
+
+
+👉 **Product Name, Category Name, and Supplier Name for all products**
+
+SELECT ProductName, CategoryName, SupplierName
+
+FROM Products
+
+LEFT JOIN Categories
+
+ON Products.CategoryID = Categories.CategoryID
+
+LEFT JOIN Suppliers
+
+ON Products.SupplierID = Suppliers.SupplierID;
+
+
+
+---
+
 ## 🛠 SQL Skills Demonstrated
 
 ### Data Retrieval
